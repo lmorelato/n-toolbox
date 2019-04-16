@@ -28,7 +28,7 @@ before_build:
 build_script:
     - cmd: dotnet publish .\src\NToolbox\NToolbox.csproj -c release
 artifacts:
-    - path: '.\src\NToolbox\bin\release\netcoreapp2.2\publish'
+    - path: '.\src\NToolbox\bin\release\netstandard2.0\publish'
       name: artifacts
       type: zip
 test_script:
