@@ -22,15 +22,8 @@ install:
 before_build:
     # Display .NET Core version
     - cmd: dotnet --version
-    # Display minimal restore text
-    - cmd: dotnet restore .\src\NToolbox\NToolbox.csproj --verbosity m
-    - cmd: dotnet restore .\tests\NToolbox.Tests\NToolbox.Tests.csproj --verbosity m
 build_script:
-    - cmd: dotnet publish .\src\NToolbox\NToolbox.csproj -c release
-artifacts:
-    - path: '.\src\NToolbox\bin\release\netstandard2.0\publish'
-      name: artifacts
-      type: zip
+    - cmd: dotnet build .\src\NToolbox\NToolbox.csproj -c Release
 test_script:
     # Code coverage Report
     - .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe
