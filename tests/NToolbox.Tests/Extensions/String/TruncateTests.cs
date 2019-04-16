@@ -11,7 +11,7 @@ namespace NToolbox.Tests.Extensions.String
         [Theory]
         [InlineData(null)]
         [InlineData("")]
-        public void Truncate_IsNullOrEmpty_ReturnsValue(string value)
+        public void Truncate_IsNullOrEmpty_ReturnsExpectedResult(string value)
         {
             var expectedResult = value;
 

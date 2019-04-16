@@ -6,18 +6,18 @@ using Xunit;
 
 namespace NToolbox.Tests.Extensions.String
 {
-    public class IsNullOrEmptyTests
+    public class IsNullOrWhitespaceTests
     {
         [Theory]
         [InlineData(null)]
         [InlineData("")]
-        public void IsNullOrEmpty_NullOrEmptyValue_True(string value)
+        public void IsNullOrWhitespaceTests_NullOrEmptyValue_True(string value)
         {
             // Arrange
-            var expectedResult = string.IsNullOrEmpty(value);
+            var expectedResult = string.IsNullOrWhiteSpace(value);
 
             // Act
-            var result = value.IsNullOrEmpty();
+            var result = value.IsNullOrWhiteSpace();
 
             // Assert
             result.Should().Be(expectedResult);
@@ -25,13 +25,13 @@ namespace NToolbox.Tests.Extensions.String
 
         [Theory]
         [InlineData("abc")]
-        public void IsNullOrEmpty_NotNullOrEmptyValue_True(string value)
+        public void IsNullOrWhitespaceTests_NotNullOrEmptyValue_True(string value)
         {
             // Arrange
-            var expectedResult = string.IsNullOrEmpty(value);
+            var expectedResult = string.IsNullOrWhiteSpace(value);
 
             // Act
-            var result = value.IsNullOrEmpty();
+            var result = value.IsNullOrWhiteSpace();
 
             // Assert
             result.Should().Be(expectedResult);

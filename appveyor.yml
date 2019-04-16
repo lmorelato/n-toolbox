@@ -1,0 +1,51 @@
+version:
+    '1.0.{build}'
+image:
+    Visual Studio 2017
+configuration:
+    Release
+environment:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+branches:
+  only:
+  - master
+skip_tags:
+    true
+clone_depth:
+    1
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
+  - cmd: git config --global core.autocrlf true
+install:
+  # Installing code coverage tools
+  - nuget install OpenCover -OutputDirectory packages -Version 4.7.922
+before_build:
+    # Display .NET Core version
+    - cmd: dotnet --version
+    # Display minimal restore text
+    - cmd: dotnet restore .\src\NToolbox\NToolbox.csproj --verbosity m
+    - cmd: dotnet restore .\tests\NToolbox.Tests\NToolbox.Tests.csproj --verbosity m
+build_script:
+    - cmd: dotnet publish .\src\NToolbox\NToolbox.csproj -c release
+artifacts:
+    - path: '.\src\NToolbox\bin\release\netcoreapp2.2\publish'
+      name: artifacts
+      type: zip
+test_script:
+    # Code coverage Report
+    - .\packages\OpenCover.4.7.922\tools\OpenCover.Console.exe
+        -register:user
+        -target:"dotnet.exe"
+        -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full .\tests\NToolbox.Tests\NToolbox.Tests.csproj"
+        -output:"coverage.xml"
+        -filter:"+[*]* -[*.Tests]*"
+        -oldStyle
+after_test:
+  # Uploading to codecov the code coverage report
+  - ps: |
+      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
+      Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
+      bash codecov.sh -f "coverage.xml"
+cache:
+    - '%USERPROFILE%\.nuget\packages'
+    - packages -> appveyor.yml
