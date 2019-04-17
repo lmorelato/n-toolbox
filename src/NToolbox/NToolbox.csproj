@@ -7,6 +7,12 @@
     <Authors>Leandro Morelato</Authors>
     <Company>lmorelato@gmail.com</Company>
     <Description>Essential tools, utilities, and extensions for C#.</Description>
+    <RepositoryUrl>https://github.com/lmorelato/n-toolbox</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>http://worldartsme.com/images/tool-box-clipart-1.jpg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/lmorelato/n-toolbox</PackageProjectUrl>
+    <Copyright />
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
