@@ -2,6 +2,6 @@
 ![Codecov](https://img.shields.io/codecov/c/github/lmorelato/n-toolbox.svg?logo=codecov&logoColor=white)
 [![CodeFactor](https://www.codefactor.io/repository/github/lmorelato/n-toolbox/badge)](https://www.codefactor.io/repository/github/lmorelato/n-toolbox)
 [![NuGet](https://img.shields.io/nuget/v/NToolbox.svg)](https://www.nuget.org/packages/NToolbox/)
-# NToolbox *Under Construcion!*
+# NToolbox (*Under Construction!)*
 Essential tools, utilities, and extensions for C#.
 
