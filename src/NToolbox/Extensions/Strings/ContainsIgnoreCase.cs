@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace NToolbox.Extensions.String
+namespace NToolbox.Extensions.Strings
 {
-    public static partial class Strings
+    public static partial class StringExtensions
     {
         public static bool ContainsIgnoreCase(this string s1, string s2)
         {

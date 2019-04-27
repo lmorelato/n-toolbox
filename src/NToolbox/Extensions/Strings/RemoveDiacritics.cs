@@ -1,9 +1,9 @@
 ﻿using System.Globalization;
 using System.Text;
 
-namespace NToolbox.Extensions.String
+namespace NToolbox.Extensions.Strings
 {
-    public static partial class Strings
+    public static partial class StringExtensions
     {
         // see at http://stackoverflow.com/questions/249087/how-do-i-remove-diacritics-accents-from-a-string-in-net
         public static string RemoveDiacritics(this string text)

@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace NToolbox.Extensions.String
+namespace NToolbox.Extensions.Strings
 {
-    public static partial class Strings
+    public static partial class StringExtensions
     {
         public static bool IsValidEmailAddress(this string s)
         {

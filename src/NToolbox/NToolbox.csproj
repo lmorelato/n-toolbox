@@ -9,10 +9,16 @@
     <Description>Essential tools, utilities, and extensions for C#.</Description>
     <RepositoryUrl>https://github.com/lmorelato/n-toolbox</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageIconUrl>http://worldartsme.com/images/tool-box-clipart-1.jpg</PackageIconUrl>
+    <PackageIconUrl>https://github.com/lmorelato/n-toolbox/blob/master/resources/logo.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/lmorelato/n-toolbox</PackageProjectUrl>
     <Copyright />
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <Product>NToolbox *Under Development!*</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\String\" />
+  </ItemGroup>
 
 </Project>

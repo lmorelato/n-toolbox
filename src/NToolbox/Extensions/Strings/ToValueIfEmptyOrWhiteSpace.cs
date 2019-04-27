@@ -1,6 +1,6 @@
-﻿namespace NToolbox.Extensions.String
+﻿namespace NToolbox.Extensions.Strings
 {
-    public static partial class Strings
+    public static partial class StringExtensions
     {
         public static string ToValueIfEmptyOrWhiteSpace(this string s, string valueIfNullOrWhiteSpace)
         {

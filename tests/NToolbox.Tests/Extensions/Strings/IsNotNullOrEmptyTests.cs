@@ -1,10 +1,10 @@
 ﻿using FluentAssertions;
 
-using NToolbox.Extensions.String;
+using NToolbox.Extensions.Strings;
 
 using Xunit;
 
-namespace NToolbox.Tests.Extensions.String
+namespace NToolbox.Tests.Extensions.Strings
 {
     public class IsNotNullOrEmptyTests
     {
