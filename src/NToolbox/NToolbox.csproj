@@ -6,14 +6,14 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Leandro Morelato</Authors>
     <Company>lmorelato@gmail.com</Company>
-    <Description>Essential tools, utilities, and extensions for C#.</Description>
+    <Description>Essential tools, utilities, and extensions for C# (Under Development)</Description>
     <RepositoryUrl>https://github.com/lmorelato/n-toolbox</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageIconUrl>https://github.com/lmorelato/n-toolbox/blob/master/resources/logo.jpg</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/lmorelato/n-toolbox/master/resources/logo.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/lmorelato/n-toolbox</PackageProjectUrl>
-    <Copyright />
+    <Copyright>Copyright (c) 2019 Leandro Morelato</Copyright>
     <Version>1.0.2</Version>
-    <Product>NToolbox *Under Development!*</Product>
+    <Product>NToolbox</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
