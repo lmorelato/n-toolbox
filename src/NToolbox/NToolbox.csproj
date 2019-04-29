@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,13 +12,9 @@
     <PackageIconUrl>https://raw.githubusercontent.com/lmorelato/n-toolbox/master/resources/logo.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/lmorelato/n-toolbox</PackageProjectUrl>
     <Copyright>Copyright (c) 2019 Leandro Morelato</Copyright>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Product>NToolbox</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Extensions\String\" />
-  </ItemGroup>
 
 </Project>
