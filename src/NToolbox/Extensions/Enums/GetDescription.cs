@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 
-namespace NToolbox.Enums
+namespace NToolbox.Extensions.Enums
 {
     public static partial class EnumExtensions
     {
