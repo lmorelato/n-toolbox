@@ -4,7 +4,7 @@ namespace NToolbox.Extensions.Strings
 {
     public static partial class StringExtensions
     {
-        public static bool ContainsIgnoreCaseAfterTrim(this string s1, string s2)
+        public static bool ContainsIgnoreCaseAndTrim(this string s1, string s2)
         {
             if (s1 == null || s2 == null)
             {

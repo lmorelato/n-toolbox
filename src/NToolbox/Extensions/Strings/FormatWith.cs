@@ -4,7 +4,7 @@
     {
         public static string FormatWith(this string f, params object[] values)
         {
-            if (values.Length == 0)
+            if (f.IsNullOrWhiteSpace() || values.Length == 0)
             {
                 return f;
             }

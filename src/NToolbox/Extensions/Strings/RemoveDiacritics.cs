@@ -8,6 +8,11 @@ namespace NToolbox.Extensions.Strings
         // see at http://stackoverflow.com/questions/249087/how-do-i-remove-diacritics-accents-from-a-string-in-net
         public static string RemoveDiacritics(this string text)
         {
+            if (text.IsNullOrWhiteSpace())
+            {
+                return text;
+            }
+
             var normalizedString = text.Normalize(NormalizationForm.FormD);
             var stringBuilder = new StringBuilder();
 

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace NToolbox.Tests.Extensions.Strings
 {
-    public class ContainsIgnoreCaseAfterTrimTests
+    public class ContainsIgnoreCaseAndTrimTests
     {
         [Theory]
         [InlineData(null, " a", false)]
@@ -17,7 +17,7 @@ namespace NToolbox.Tests.Extensions.Strings
         public void ContainsIgnoreCaseAfterTrim_WhenCalled_ExpectedValue(string a, string b, bool expectedResult)
         {
             // Act
-            var result = a.ContainsIgnoreCaseAfterTrim(b);
+            var result = a.ContainsIgnoreCaseAndTrim(b);
 
             // Assert
             result.Should().Be(expectedResult);
