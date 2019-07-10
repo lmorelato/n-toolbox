@@ -14,13 +14,14 @@ namespace NToolbox.Extensions.Enums
             }
 
             var field = valor.GetType().GetField(valor.ToString());
-            if (field == null)
+            var attributes = (DescriptionAttribute[])field.GetCustomAttributes(typeof(DescriptionAttribute), false);
+
+            if (attributes.Length == 0)
             {
                 return valor.ToString();
             }
 
-            var attributes = (DescriptionAttribute[])field.GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return attributes.Length > 0 ? attributes.First().Description : valor.ToString();
+            return attributes.First().Description;
         }
     }
 }

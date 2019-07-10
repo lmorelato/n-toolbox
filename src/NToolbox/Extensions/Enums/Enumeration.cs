@@ -9,14 +9,16 @@
 
 using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 
-namespace NToolbox
+namespace NToolbox.Extensions.Enums
 {
     [Serializable]
     [DebuggerDisplay("{DisplayName} - {Value}")]
+    [ExcludeFromCodeCoverage]
     public abstract class Enumeration<TEnumeration> : Enumeration<TEnumeration, int>
         where TEnumeration : Enumeration<TEnumeration>
     {
@@ -39,6 +41,7 @@ namespace NToolbox
     [Serializable]
     [DebuggerDisplay("{DisplayName} - {Value}")]
     [DataContract(Namespace = "http://github.com/HeadspringLabs/Enumeration/5/13")]
+    [ExcludeFromCodeCoverage]
     public abstract class Enumeration<TEnumeration, TValue> : IComparable<TEnumeration>, IEquatable<TEnumeration>
         where TEnumeration : Enumeration<TEnumeration, TValue>
         where TValue : IComparable
