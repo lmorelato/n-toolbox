@@ -40,14 +40,11 @@ namespace NToolbox.Tests.Extensions.Objects
         [Fact]
         public void TrimSpaces_NullObject_NullObject()
         {
-            // arrange
-            TestClass obj = null;
-
             // act
-            obj.TrimSpaces();
+            ((TestClass)null).TrimSpaces();
 
             // assert
-            obj.Should().BeNull();
+            ((TestClass)null).Should().BeNull();
         }
 
         private class TestClass

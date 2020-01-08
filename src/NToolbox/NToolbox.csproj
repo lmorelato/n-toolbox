@@ -11,10 +11,14 @@
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://raw.githubusercontent.com/lmorelato/n-toolbox/master/resources/logo.jpg</PackageIconUrl>
     <PackageProjectUrl>https://github.com/lmorelato/n-toolbox</PackageProjectUrl>
-    <Copyright>Copyright (c) 2019 Leandro Morelato</Copyright>
-    <Version>1.0.3</Version>
+    <Copyright>Copyright (c) 2020 Leandro Morelato</Copyright>
+    <Version>1.0.5</Version>
     <Product>NToolbox</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\Dates\" />
+  </ItemGroup>
 
 </Project>
